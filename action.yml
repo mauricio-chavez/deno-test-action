@@ -1,6 +1,6 @@
 name: 'Deno Testing'
 autor: 'Mauricio Chávez Olea'
-description: 'Runs your Deno test'
+description: 'Run tests on a Deno project'
 branding:
   icon: 'check'
   color: 'green'
