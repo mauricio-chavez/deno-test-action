@@ -1,0 +1,16 @@
+name: 'Deno Testing'
+autor: 'Mauricio Chávez Olea'
+description: 'Runs your Deno test'
+branding:
+  icon: 'check'
+  color: 'green'
+inputs:
+  tests:
+    description: 'Files that contains your test function'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.tests }}
