@@ -4,7 +4,6 @@ WORKDIR /app
 
 USER deno
 
-COPY . .
-RUN deno cache app.ts
+COPY entrypoint.sh /entrypoint.sh
 
-CMD ["run", "--allow-read", "--allow-env", "--allow-net", "app.ts"]
+ENTRYPOINT ["/entrypoint.sh"]
